@@ -5,7 +5,7 @@ on:
     branches: [ master, gh-actions ]
   pull_request:
     branches: [ master ]
-
+  workflow_dispatch:
 jobs:
   steamkit2:
     name: SteamKit2 on ${{ matrix.os }} - ${{ matrix.configuration }} (SDK ${{ matrix.sdk }})
